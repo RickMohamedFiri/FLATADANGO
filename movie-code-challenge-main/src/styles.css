@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    background: #111;
+}
+
+.app{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background: #111;
+}
+
+.movies-list {
+   background-color: black;
+    height: 100vh;
+    flex: 1;
+    list-style-type: none;
+}
+.movies-list  li{
+    color: lime;
+    padding: .5em;
+    cursor: pointer;
+}
+.movies-list  li:hover{
+    background-color: lime;
+    color: black;
+    font-weight: bolder;
+}
+
+.movies-list  li:nth-child(1){
+    margin-bottom: 1em;
+    background-color: lime;
+    color: black;
+    font-weight:300;
+    font-size: 1.6rem;
+    cursor: inherit;
+}
+
+
+.movie
+{
+    flex: 2;
+    position: relative;
+    background: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+   
+}
+
+.movie-card
+{
+    background: yellow;
+    position: relative;
+    height: 95vh;
+    width: 80vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.movie img {
+       width: 100%;
+       height: 100%;
+}
+.movie .description  {
+     
+     width: 70vmin;
+     padding: 1rem;
+     background-color: rgba(0, 0, 0, 0.879);
+     border-radius: 1em;
+     position: absolute;
+     bottom: 4rem;
+}
+
+.movie .description p{
+    font-size: 1.2em;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.movie .title{
+    font-size: 2em;
+    position: absolute;
+    top: 1.5rem;
+    color: rgb(255, 123, 0);
+    scale: 1.3;
+    font-family: 'Poppins', sans-serif;
+    width: 12em;
+
+}
+.movie .title h2{
+    line-height: 4rem;
+}
+
+.movie .tickets {
+    display: flex;
+    gap:1em;
+    margin-top: 2em;
+    flex-wrap: wrap;
+}
+.movie .tickets p{
+    font-size: .8em;
+    display: flex;
+    align-items: center;
+    gap: .8em;
+}
+
+
+.call-to-action button {
+    position: absolute;
+    bottom: 1rem;
+    background-color: white;
+    outline: none;
+    border: none;
+    padding: .5em 1em;
+    border-radius: .2em;
+    font-weight: bold;
+    color: black;
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    cursor: pointer;
+    font-size: 1.2em;
+}
+.call-to-action button:hover{
+
+    transition: scale 500ms;
+    background-color: #000;
+    border: 2px solid white;
+    color: white;
+}
